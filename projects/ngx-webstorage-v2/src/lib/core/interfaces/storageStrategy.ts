@@ -8,7 +8,7 @@ export interface StorageStrategy<T> {
 	
 	get(key: string): Observable<T>;
 	
-	set(key: string, value: T): Observable<T>;
+	set(key: string, value: T, expiresIn?: number): Observable<T>;
 	
 	del(key: string): Observable<void>;
 	

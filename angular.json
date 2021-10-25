@@ -142,38 +142,38 @@
         }
       }
     },
-    "ngx-webstorage": {
-      "root": "projects/ngx-webstorage",
-      "sourceRoot": "projects/ngx-webstorage/src",
+    "ngx-webstorage-v2": {
+      "root": "projects/ngx-webstorage-v2",
+      "sourceRoot": "projects/ngx-webstorage-v2/src",
       "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ngx-webstorage/tsconfig.lib.json",
-            "project": "projects/ngx-webstorage/ng-package.json"
+            "tsConfig": "projects/ngx-webstorage-v2/tsconfig.lib.json",
+            "project": "projects/ngx-webstorage-v2/ng-package.json"
           }
         ,          "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-webstorage/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-webstorage-v2/tsconfig.lib.prod.json"
             }
           }
 },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-webstorage/src/test.ts",
-            "tsConfig": "projects/ngx-webstorage/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-webstorage/karma.conf.js"
+            "main": "projects/ngx-webstorage-v2/src/test.ts",
+            "tsConfig": "projects/ngx-webstorage-v2/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-webstorage-v2/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-webstorage/tsconfig.lib.json",
-              "projects/ngx-webstorage/tsconfig.spec.json"
+              "projects/ngx-webstorage-v2/tsconfig.lib.json",
+              "projects/ngx-webstorage-v2/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -182,29 +182,29 @@
         }
       }
     },
-    "ngx-webstorage-cross-storage": {
+    "ngx-webstorage-cross-storage-v2": {
       "projectType": "library",
-      "root": "projects/ngx-webstorage-cross-storage",
-      "sourceRoot": "projects/ngx-webstorage-cross-storage/src",
+      "root": "projects/ngx-webstorage-v2-cross-storage",
+      "sourceRoot": "projects/ngx-webstorage-v2-cross-storage/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ngx-webstorage-cross-storage/tsconfig.lib.json",
-            "project": "projects/ngx-webstorage-cross-storage/ng-package.json"
+            "tsConfig": "projects/ngx-webstorage-v2-cross-storage/tsconfig.lib.json",
+            "project": "projects/ngx-webstorage-v2-cross-storage/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-webstorage-cross-storage/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-webstorage-v2-cross-storage/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-webstorage-cross-storage/src/test.ts",
-            "tsConfig": "projects/ngx-webstorage-cross-storage/tsconfig.spec.json",
+            "main": "projects/ngx-webstorage-v2-cross-storage/src/test.ts",
+            "tsConfig": "projects/ngx-webstorage-v2-cross-storage/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-webstorage-cross-storage/karma.conf.js"
           }
         },
@@ -212,8 +212,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-webstorage-cross-storage/tsconfig.lib.json",
-              "projects/ngx-webstorage-cross-storage/tsconfig.spec.json"
+              "projects/ngx-webstorage-v2-cross-storage/tsconfig.lib.json",
+              "projects/ngx-webstorage-v2-cross-storage/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

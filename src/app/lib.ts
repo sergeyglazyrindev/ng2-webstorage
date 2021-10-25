@@ -1,1 +1,1 @@
-export * from '../../projects/ngx-webstorage/src/public_api';
+export * from '../../projects/ngx-webstorage-v2/src/public_api';

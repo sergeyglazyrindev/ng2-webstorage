@@ -9,7 +9,7 @@ export interface WebStorage {
 
 	removeItem(key: string): void;
 
-	setItem(key: string, value: string): void;
+	setItem(key: string, value: string, expiresIn?: number): void;
 
 	[name: string]: any;
 }

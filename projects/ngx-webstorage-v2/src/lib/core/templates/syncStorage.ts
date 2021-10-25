@@ -15,8 +15,8 @@ export class SyncStorage implements StorageService {
 		return value;
 	}
 
-	store(key: string, value: any): any {
-		this.strategy.set(StorageKeyManager.normalize(key), value).subscribe(noop);
+	store(key: string, value: any, expiresIn?: number): any {
+		this.strategy.set(StorageKeyManager.normalize(key), value, expiresIn).subscribe(noop);
 		return value;
 	}
 

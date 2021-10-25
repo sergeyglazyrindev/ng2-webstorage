@@ -17,13 +17,13 @@
       "dom"
     ],
     "paths": {
-      "ngx-webstorage": [
-        "dist/ngx-webstorage/ngx-webstorage",
-        "dist/ngx-webstorage"
+      "ngx-webstorage-v2": [
+        "dist/ngx-webstorage-v2/ngx-webstorage-v2",
+        "dist/ngx-webstorage-v2"
       ],
-      "ngx-webstorage-cross-storage": [
-        "dist/ngx-webstorage-cross-storage/ngx-webstorage-cross-storage",
-        "dist/ngx-webstorage-cross-storage"
+      "ngx-webstorage-cross-storage-v2": [
+        "dist/ngx-webstorage-cross-storage-v2/ngx-webstorage-cross-storage-v2",
+        "dist/ngx-webstorage-cross-storage-v2"
       ]
     }
   }

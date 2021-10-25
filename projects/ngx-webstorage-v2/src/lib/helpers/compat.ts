@@ -8,8 +8,9 @@ export class CompatHelper {
 			if (typeof storage === 'object') {
 				storage.setItem('test-storage', 'foobar');
 				storage.removeItem('test-storage');
+			} else {
+				available = false;
 			}
-			else available = false;
 		} catch(e) {
 			available = false;
 		}

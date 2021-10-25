@@ -15,8 +15,8 @@ export class AsyncStorage implements StorageService {
 		);
 	}
 
-	store(key: string, value: any): Observable<any> {
-		return this.strategy.set(StorageKeyManager.normalize(key), value);
+	store(key: string, value: any, expiresIn?: number): Observable<any> {
+		return this.strategy.set(StorageKeyManager.normalize(key), value, expiresIn);
 	}
 
 	clear(key?: string): Observable<void> {

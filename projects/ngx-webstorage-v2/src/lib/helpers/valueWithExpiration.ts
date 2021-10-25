@@ -11,7 +11,7 @@ export class ValueWithExpiration {
 	}
 
 	setExpiration(expiresIn: number): void {
-		this._d._e_in = CompatHelper.getUTCTime() + (expiresIn * 1000);
+		this._d._e_in = CompatHelper.getUTCTime() + expiresIn;
 	}
 
 	isExpired(): boolean {
